@@ -1,12 +1,13 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<p><h2>Accueil du blog</h2></p>
+<p><h2>Accueil de la cave</h2></p>
 <p>bienvenue</p>
 <p>
     <ul>
         <li><a href="{% url 'admin:index' %}" >Admin</a></li>
-        <li><a href="{% url 'articles' %}" >Liste des articles</a></li>
+        <li><a href="{% url 'vins' %}" >Liste des vins</a></li>
+        <li><a href="{% url 'blog' %}" >Blog</li>
     </ul>
 </p>
 {% endblock %}
