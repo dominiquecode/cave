@@ -1,3 +1,6 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
 <p><h2>Accueil du blog</h2></p>
 <p>bienvenue</p>
 <p>
@@ -6,3 +9,4 @@
         <li><a href="{% url 'articles' %}" >Liste des articles</a></li>
     </ul>
 </p>
+{% endblock %}
