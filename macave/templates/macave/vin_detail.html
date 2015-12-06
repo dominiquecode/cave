@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="post">
+        {% if post.published_date %}
+            <div class="date">
+                enregistré le : {{ vin.published_date }}
+            </div>
+        {% endif %}
+        <a class="btn btn-default" href="{% url 'vin_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        <h1>{{ vin.etiquette }}</h1>
+        <p>{{ bin.commentaire|linebreaks }}</p>
+    </div>
+{% endblock %}
