@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'django_admin_bootstrapped',
     'django.contrib.admin',
     'django.contrib.auth',
+    'django.contrib.sites',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
@@ -75,8 +76,10 @@ TEMPLATES = [
     },
 ]
 
+
 WSGI_APPLICATION = 'cave.wsgi.application'
 
+SITE_ID = 1
 
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
