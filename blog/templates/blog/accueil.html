@@ -1,12 +1,16 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<p><h2>Accueil du blog</h2></p>
-<p>bienvenue</p>
-<p>
-    <ul>
-        <li><a href="{% url 'admin:index' %}" >Admin</a></li>
-        <li><a href="{% url 'articles' %}" >Liste des articles</a></li>
-    </ul>
-</p>
+    <p><h2>Accueil du blog</h2></p>
+    <p>bienvenue</p>
+        <a href="{% url 'post_new' %}" ><span class="glyphicon glyphicon-plus"></span></a>
+        <a href="{% url 'post_draft_list' %}"><span class="glyphicon glyphicon-edit"></span></a>
+    <p>
+        <ul>
+            <li><a href="{% url 'admin:index' %}" >Admin</a></li>
+            <li><a href="{% url 'articles' %}" >Liste des articles publiés</a></li>
+            <li><a href="{% url 'post_draft_list' %}" >Liste des articles non publiés</a></li>
+
+        </ul>
+    </p>
 {% endblock %}
