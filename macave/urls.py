@@ -1,9 +1,8 @@
-from django.conf.urls import url
+from django.conf.urls import url, patterns
 
 
-urlpatterns = [
-    url(r'^$', 'macave.views.accueil', name='accueil'),
-    url(r'^vins/', 'macave.views.vins', name='vins'),
-    url(r'^vin/(?P<pk>[0-9]+)/$', 'macave.views.vin_detail', name='vin_detail'),
-
-]
+urlpatterns = patterns('macave.views',
+    url(r'^$', 'cave', name='cave'),
+    url(r'^vins/', 'vins', name='vins'),
+    url(r'^vin/(?P<pk>[0-9]+)/$', 'vin_detail', name='vin_detail'),
+                       )
