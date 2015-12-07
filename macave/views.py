@@ -3,8 +3,8 @@ from .models import Vin
 
 
 # Create your views here.
-def accueil(request):
-    return render(request, 'macave/accueil.html', {})
+def cave(request):
+    return render(request, 'macave/cave.html', {})
 
 
 def vins(request):
@@ -16,3 +16,6 @@ def vin_detail(request, pk):
     vin = get_object_or_404(Vin, pk=pk)
     return render(request, 'macave/vin_detail.html', {'vin': vin})
 
+
+def accueil(request):
+    return render(request, 'macave/accueil.html', {})

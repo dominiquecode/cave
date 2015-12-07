@@ -23,5 +23,6 @@ urlpatterns = patterns('',
     url(r'^accounts/login/$', 'django.contrib.auth.views.login'),
     url(r'^accounts/logout/$', 'django.contrib.auth.views.logout', {'next_page': '/'}),
     url(r'^blog/', include('blog.urls')),
-    url(r'', include('macave.urls')),
+    url(r'^$', 'macave.views.accueil'),
+    url(r'^cave/', include('macave.urls')),
                        )
