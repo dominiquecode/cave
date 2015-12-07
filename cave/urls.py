@@ -27,5 +27,4 @@ urlpatterns = patterns('',
     url(r'^accounts/logout/$', 'django.contrib.auth.views.logout', {'next_page': '/'}),
     url(r'^blog/', include('blog.urls')),
     url(r'^cave/', include('macave.urls')),
-    url(r'^andablog/', include('andablog.urls')),
                        )
