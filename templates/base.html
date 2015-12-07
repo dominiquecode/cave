@@ -78,11 +78,15 @@
             </li>-->
           </ul>
           <ul class="nav navbar-nav navbar-right">
-              <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+              <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
             <li><a href="{% url 'admin:index' %}">Admin</a></li>
-            <!--<li class="active"><a href="./">Static top <span class="sr-only">(current)</span></a></li>
-            <li><a href="../navbar-fixed-top/">Fixed top</a></li>-->
+             {% if user.is_authenticated %}
+                 <pr>Salut {{ user.username }}  <small><br />
+              <li>(<a href="{% url 'django.contrib.auth.views.logout' %}">Déconnexion</a>)</small></pr>
+             {% else %}
+                <a href="{% url 'django.contrib.auth.views.login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a
+             {% endif %}</li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

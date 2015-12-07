@@ -18,4 +18,4 @@ def vin_detail(request, pk):
 
 
 def accueil(request):
-    return render(request, 'macave/accueil.html', {})
+    return render(request, 'macave/../templates/accueil.html', {})
