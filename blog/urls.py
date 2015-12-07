@@ -7,7 +7,8 @@ urlpatterns = [
     url(r'^post/(?P<pk>[0-9]+)/$', 'blog.views.post_detail', name='post_detail'),
     url(r'^post/(?P<pk>[0-9]+)/edit/$', 'blog.views.post_edit', name='post_edit'),
     url(r'^post/(?P<pk>[0-9]+)/publish/$', 'blog.views.post_publish', name='post_publish'),
+    url(r'^post/(?P<pk>[0-9]+)/remove/$', 'blog.views.post_remove', name='post_remove'),
     url(r'^post/new/$', 'blog.views.post_new', name='post_new'),
-    url(r'^drafts/$', 'blog.views.post_draft_list', name='post_draft_list'),
+    url(r'^post/drafts/$', 'blog.views.post_draft_list', name='post_draft_list'),
 
 ]
