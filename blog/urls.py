@@ -2,7 +2,7 @@ from django.conf.urls import url, patterns
 
 
 urlpatterns = patterns('blog.views',
-    url(r'^blog$', 'accueil', name='blog'),
+    url(r'^$', 'accueil', name='blog'),
     url(r'^articles/', 'post_list', name='articles'),
     url(r'^post/(?P<pk>[0-9]+)/$', 'post_detail', name='post_detail'),
     url(r'^post/(?P<pk>[0-9]+)/edit/$', 'post_edit', name='post_edit'),
