@@ -30,6 +30,23 @@ th {
     text-align: right;
 }
 
+<<<<<<< HEAD
+.module ul, .module ol {
+    margin-left: 0;
+    margin-right: 1.5em;
+}
+
+.addlink, .changelink {
+    padding-left: 0;
+    padding-right: 16px;
+    background-position: 100% 1px;
+}
+
+.deletelink {
+    padding-left: 0;
+    padding-right: 16px;
+    background-position: 100% 1px;
+=======
 .addlink, .changelink {
     padding-left: 0px;
     padding-right: 12px;
@@ -40,6 +57,7 @@ th {
     padding-left: 0px;
     padding-right: 12px;
     background-position: 100% 0.25em;
+>>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 .object-tools {
@@ -48,7 +66,11 @@ th {
 
 thead th:first-child,
 tfoot td:first-child {
+<<<<<<< HEAD
+    border-left: none;
+=======
     border-left: 1px solid #ddd !important;
+>>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 /* LAYOUT */
@@ -69,13 +91,22 @@ div.breadcrumbs {
 
 #content-related {
     float: left;
+<<<<<<< HEAD
+    margin-left: -300px;
+=======
     margin-left: -19em;
+>>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
     margin-right: auto;
 }
 
 .colMS {
+<<<<<<< HEAD
+    margin-left: 300px;
+    margin-right: 0;
+=======
     margin-left: 20em !important;
     margin-right: 10px !important;
+>>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 /* SORTABLE TABLES */
@@ -93,23 +124,60 @@ thead th.sorted .text {
 
 .dashboard .module table td a {
     padding-left: .6em;
+<<<<<<< HEAD
+    padding-right: 16px;
+=======
     padding-right: 12px;
+>>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 /* changelists styles */
 
+<<<<<<< HEAD
+.change-list .filtered table {
+    border-left: none;
+=======
 .change-list .filtered {
     background: white url(../img/changelist-bg_rtl.gif) top left repeat-y !important;
 }
 
 .change-list .filtered table {
     border-left: 1px solid #ddd;
+>>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
     border-right: 0px none;
 }
 
 #changelist-filter {
     right: auto;
     left: 0;
+<<<<<<< HEAD
+    border-left: none;
+    border-right: none;
+}
+
+.change-list .filtered .results, .change-list .filtered .paginator, .filtered #toolbar, .filtered div.xfull {
+    margin-right: 0;
+    margin-left: 280px;
+}
+
+#changelist-filter li.selected {
+    border-left: none;
+    padding-left: 10px;
+    margin-left: 0;
+    border-right: 5px solid #eaeaea;
+    padding-right: 10px;
+    margin-right: -15px;
+}
+
+.filtered .actions {
+    margin-left: 280px;
+    margin-right: 0;
+}
+
+#changelist table tbody td:first-child, #changelist table tbody th:first-child {
+    border-right: none;
+    border-left: none;
+=======
     border-left: 0px none;
     border-right: 1px solid #ddd;
 }
@@ -138,6 +206,7 @@ thead th.sorted .text {
 #changelist table tbody td:first-child, #changelist table tbody th:first-child {
     border-right: 0;
     border-left: 1px solid #ddd;
+>>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 /* FORMS */
@@ -155,15 +224,27 @@ thead th.sorted .text {
     float: right;
 }
 
+<<<<<<< HEAD
+.submit-row input.default {
+    margin-left: 0;
+=======
 .submit-row .deletelink {
     background: url(../img/icon_deletelink.gif) 0 50% no-repeat;
     padding-right: 14px;
+>>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 .vDateField, .vTimeField {
     margin-left: 2px;
 }
 
+<<<<<<< HEAD
+.aligned .form-row input {
+    margin-left: 5px;
+}
+
+=======
+>>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 form ul.inline li {
     float: right;
     padding-right: 0;
@@ -181,6 +262,15 @@ fieldset .field-box {
 }
 
 .errorlist li {
+<<<<<<< HEAD
+    background-position: 100% 12px;
+    padding: 0;
+}
+
+.errornote {
+    background-position: 100% 12px;
+    padding: 10px 12px;
+=======
     background-position: 100% .3em;
     padding: 4px 25px 4px 5px;
 }
@@ -188,6 +278,7 @@ fieldset .field-box {
 .errornote {
     background-position: 100% .3em;
     padding: 4px 25px 4px 5px;
+>>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 /* WIDGETS */
@@ -195,13 +286,21 @@ fieldset .field-box {
 .calendarnav-previous {
     top: 0;
     left: auto;
+<<<<<<< HEAD
+    right: 10px;
+=======
     right: 0;
+>>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 .calendarnav-next {
     top: 0;
     right: auto;
+<<<<<<< HEAD
+    left: 10px;
+=======
     left: 0;
+>>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 .calendar caption, .calendarbox h2 {
@@ -220,6 +319,13 @@ fieldset .field-box {
     float: left;
 }
 
+<<<<<<< HEAD
+form .form-row p.datetime {
+    overflow: hidden;
+}
+
+=======
+>>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 /* MISC */
 
 .inline-related h2, .inline-group h2 {
