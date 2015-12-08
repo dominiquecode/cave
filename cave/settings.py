@@ -75,8 +75,14 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'cave.wsgi.application'
+TEMPLATE_CONTEXT_PROCESSORS = (
+  'django.contrib.auth.context_processors.auth',
+  'django.core.context_processors.i18n',
+  'django.core.context_processors.request',
+)
 
+
+WSGI_APPLICATION = 'cave.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
