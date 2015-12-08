@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div class="container">
+
     <p><h2>Accueil du blog</h2></p>
         <a href="{% url 'post_new' %}" ><span class="glyphicon glyphicon-plus"></span></a>
         <a href="{% url 'post_draft_list' %}"><span class="glyphicon glyphicon-edit"></span></a>
@@ -11,5 +11,5 @@
             <li class="list-group-item"><a href="{% url 'post_draft_list' %}" >Liste des articles non publiés</a></li>
         </ul>
     </p>
-    </div>
+
 {% endblock %}
