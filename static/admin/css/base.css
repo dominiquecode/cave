@@ -2,7 +2,6 @@
     DJANGO Admin styles
 */
 
-<<<<<<< HEAD
 @import url(fonts.css);
 
 body {
@@ -10,13 +9,6 @@ body {
     padding: 0;
     font-size: 14px;
     font-family: "Roboto","Lucida Grande","DejaVu Sans","Bitstream Vera Sans",Verdana,Arial,sans-serif;
-=======
-body {
-    margin: 0;
-    padding: 0;
-    font-size: 12px;
-    font-family: "Lucida Grande","DejaVu Sans","Bitstream Vera Sans",Verdana,Arial,sans-serif;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
     color: #333;
     background: #fff;
 }
@@ -24,7 +16,6 @@ body {
 /* LINKS */
 
 a:link, a:visited {
-<<<<<<< HEAD
     color: #447e9b;
     text-decoration: none;
 }
@@ -37,16 +28,6 @@ a:focus {
     text-decoration: underline;
 }
 
-=======
-    color: #5b80b2;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #036;
-}
-
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 a img {
     border: none;
 }
@@ -56,13 +37,10 @@ a.section:link, a.section:visited {
     text-decoration: none;
 }
 
-<<<<<<< HEAD
 a.section:focus, a.section:hover {
     text-decoration: underline;
 }
 
-=======
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 /* GLOBAL DEFAULTS */
 
 p, ol, ul, dl {
@@ -79,17 +57,10 @@ h1,h2,h3,h4,h5 {
 }
 
 h1 {
-<<<<<<< HEAD
     margin: 0 0 20px;
     font-weight: 300;
     font-size: 20px;
     color: #666;
-=======
-    font-size: 18px;
-    color: #666;
-    padding: 0 6px 0 0;
-    margin: 0 0 .2em 0;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 h2 {
@@ -128,8 +99,6 @@ ul li {
     padding: 1px 0;
 }
 
-<<<<<<< HEAD
-=======
 ul.plainlist {
     margin-left: 0 !important;
 }
@@ -138,19 +107,13 @@ ul.plainlist li {
     list-style-type: none;
 }
 
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 li ul {
     margin-bottom: 0;
 }
 
 li, dt, dd {
-<<<<<<< HEAD
     font-size: 13px;
     line-height: 20px;
-=======
-    font-size: 11px;
-    line-height: 14px;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 dt {
@@ -170,11 +133,8 @@ form {
 fieldset {
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
     border: none;
     border-top: 1px solid #eee;
-=======
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 blockquote {
@@ -188,11 +148,7 @@ blockquote {
 code, pre {
     font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
     color: #666;
-<<<<<<< HEAD
     font-size: 12px;
-=======
-    font-size: 11px;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 pre.literal-block {
@@ -232,32 +188,19 @@ p.tiny {
 }
 
 .mini {
-<<<<<<< HEAD
     font-size: 10px;
-=======
-    font-size: 9px;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 p.mini {
     margin-top: -3px;
 }
 
-<<<<<<< HEAD
 .help, p.help, form p.help {
     font-size: 11px;
     color: #999;
 }
 
 .help-tooltip {
-=======
-.help, p.help {
-    font-size: 10px !important;
-    color: #999;
-}
-
-img.help-tooltip {
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
     cursor: help;
 }
 
@@ -266,17 +209,8 @@ p img, h1 img, h2 img, h3 img, h4 img, td img {
 }
 
 .quiet, a.quiet:link, a.quiet:visited {
-<<<<<<< HEAD
     color: #999;
     font-weight: normal;
-=======
-    color: #999 !important;
-    font-weight: normal !important;
-}
-
-.quiet strong {
-    font-weight: bold !important;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 .float-right {
@@ -317,7 +251,6 @@ table {
 }
 
 td, th {
-<<<<<<< HEAD
     font-size: 13px;
     line-height: 16px;
     border-bottom: 1px solid #eee;
@@ -329,70 +262,22 @@ td, th {
 th {
     font-weight: 600;
     text-align: left;
-=======
-    font-size: 11px;
-    line-height: 13px;
-    border-bottom: 1px solid #eee;
-    vertical-align: top;
-    padding: 5px;
-    font-family: "Lucida Grande", Verdana, Arial, sans-serif;
-}
-
-th {
-    text-align: left;
-    font-size: 12px;
-    font-weight: bold;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 thead th,
 tfoot td {
     color: #666;
-<<<<<<< HEAD
     padding: 5px 10px;
     font-size: 11px;
     background: #fff;
     border: none;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
-=======
-    padding: 2px 5px;
-    font-size: 11px;
-    background: #e1e1e1 url(../img/nav-bg.gif) top left repeat-x;
-    border-left: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 tfoot td {
     border-bottom: none;
-<<<<<<< HEAD
     border-top: 1px solid #eee;
-=======
-    border-top: 1px solid #ddd;
-}
-
-thead th:first-child,
-tfoot td:first-child {
-    border-left: none !important;
-}
-
-thead th.optional {
-    font-weight: normal !important;
-}
-
-fieldset table {
-    border-right: 1px solid #eee;
-}
-
-tr.row-label td {
-    font-size: 9px;
-    padding-top: 2px;
-    padding-bottom: 0;
-    border-bottom: none;
-    color: #666;
-    margin-top: -1px;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 tr.alt {
@@ -400,33 +285,24 @@ tr.alt {
 }
 
 .row1 {
-<<<<<<< HEAD
     background: #fff;
 }
 
 .row2 {
     background: #f9f9f9;
-=======
-    background: #EDF3FE;
 }
 
 .row2 {
     background: #fff;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 /* SORTABLE TABLES */
 
 thead th {
-<<<<<<< HEAD
     padding: 5px 10px;
     line-height: normal;
     text-transform: uppercase;
     background: #f6f6f6;
-=======
-    padding: 2px 5px;
-    line-height: normal;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 thead th a:link, thead th a:visited {
@@ -434,11 +310,7 @@ thead th a:link, thead th a:visited {
 }
 
 thead th.sorted {
-<<<<<<< HEAD
     background: #eee;
-=======
-    background: #c5c5c5 url(../img/nav-bg-selected.gif) top left repeat-x;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 thead th.sorted .text {
@@ -446,31 +318,18 @@ thead th.sorted .text {
 }
 
 table thead th .text span {
-<<<<<<< HEAD
     padding: 8px 10px;
     display: block;
-=======
-    padding: 2px 5px;
-    display:block;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 table thead th .text a {
     display: block;
     cursor: pointer;
-<<<<<<< HEAD
     padding: 8px 10px;
 }
 
 table thead th .text a:focus, table thead th .text a:hover {
     background: #eee;
-=======
-    padding: 2px 5px;
-}
-
-table thead th.sortable:hover {
-    background: #fff url(../img/nav-bg-reverse.gif) 0 -5px repeat-x;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 thead th.sorted a.sortremove {
@@ -483,11 +342,7 @@ table thead th.sorted:hover a.sortremove {
 
 table thead th.sorted .sortoptions {
     display: block;
-<<<<<<< HEAD
     padding: 9px 5px 0 5px;
-=======
-    padding: 4px 5px 0 5px;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
     float: right;
     text-align: right;
 }
@@ -496,7 +351,6 @@ table thead th.sorted .sortpriority {
     font-size: .8em;
     min-width: 12px;
     text-align: center;
-<<<<<<< HEAD
     vertical-align: 3px;
     margin-left: 2px;
     margin-right: 2px;
@@ -516,7 +370,6 @@ table thead th.sorted .sortoptions a.sortremove {
 }
 
 table thead th.sorted .sortoptions a.sortremove:after {
-    content: '\\';
     position: absolute;
     top: -6px;
     left: 3px;
@@ -552,55 +405,6 @@ table thead th.sorted .sortoptions a.descending {
 table thead th.sorted .sortoptions a.descending:focus,
 table thead th.sorted .sortoptions a.descending:hover {
     background-position: 0 -70px;
-=======
-    vertical-align: top;
-}
-
-table thead th.sorted .sortoptions a {
-    width: 14px;
-    height: 12px;
-    display: inline-block;
-}
-
-table thead th.sorted .sortoptions a.sortremove {
-    background: url(../img/sorting-icons.gif) -4px -5px no-repeat;
-}
-
-table thead th.sorted .sortoptions a.sortremove:hover {
-    background: url(../img/sorting-icons.gif) -4px -27px no-repeat;
-}
-
-table thead th.sorted .sortoptions a.ascending {
-    background: url(../img/sorting-icons.gif) -5px -50px no-repeat;
-}
-
-table thead th.sorted .sortoptions a.ascending:hover {
-    background: url(../img/sorting-icons.gif) -5px -72px no-repeat;
-}
-
-table thead th.sorted .sortoptions a.descending {
-    background: url(../img/sorting-icons.gif) -5px -94px no-repeat;
-}
-
-table thead th.sorted .sortoptions a.descending:hover {
-    background: url(../img/sorting-icons.gif) -5px -115px no-repeat;
-}
-
-/* ORDERABLE TABLES */
-
-table.orderable tbody tr td:hover {
-    cursor: move;
-}
-
-table.orderable tbody tr td:first-child {
-    padding-left: 14px;
-    background-image: url(../img/nav-bg-grabber.gif);
-    background-repeat: repeat-y;
-}
-
-table.orderable-initalized .order-cell, body>tr>td.order-cell {
-    display: none;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 /* FORM DEFAULTS */
@@ -609,7 +413,6 @@ input, textarea, select, .form-row p, form .button {
     margin: 2px 0;
     padding: 2px 3px;
     vertical-align: middle;
-<<<<<<< HEAD
     font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
     font-weight: normal;
     font-size: 13px;
@@ -639,46 +442,23 @@ select {
 
 select[multiple] {
     min-height: 150px;
-=======
-    font-family: "Lucida Grande", Verdana, Arial, sans-serif;
-    font-weight: normal;
-    font-size: 11px;
-}
-
-textarea {
-    vertical-align: top !important;
-}
-
-input[type=text], input[type=password], input[type=email], input[type=url], input[type=number],
-textarea, select, .vTextField {
-    border: 1px solid #ccc;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 /* FORM BUTTONS */
 
 .button, input[type=submit], input[type=button], .submit-row input, a.button {
-<<<<<<< HEAD
     background: #79aec8;
     padding: 10px 15px;
     border: none;
     border-radius: 4px;
     color: #fff;
     cursor: pointer;
-=======
-    background: #fff url(../img/nav-bg.gif) bottom repeat-x;
-    padding: 3px 5px;
-    color: black;
-    border: 1px solid #bbb;
-    border-color: #ddd #aaa #aaa #ddd;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 a.button {
     padding: 4px 5px;
 }
 
-<<<<<<< HEAD
 .button:active, input[type=submit]:active, input[type=button]:active,
 .button:focus, input[type=submit]:focus, input[type=button]:focus,
 .button:hover, input[type=submit]:hover, input[type=button]:hover {
@@ -686,21 +466,10 @@ a.button {
 }
 
 .button[disabled], input[type=submit][disabled], input[type=button][disabled] {
-=======
-.button:active, input[type=submit]:active, input[type=button]:active {
-    background-image: url(../img/nav-bg-reverse.gif);
-    background-position: top;
-}
-
-.button[disabled], input[type=submit][disabled], input[type=button][disabled] {
-    background-image: url(../img/nav-bg.gif);
-    background-position: bottom;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
     opacity: 0.4;
 }
 
 .button.default, input[type=submit].default, .submit-row input.default {
-<<<<<<< HEAD
     float: right;
     border: none;
     font-weight: 400;
@@ -716,23 +485,6 @@ a.button {
 .button[disabled].default,
 input[type=submit][disabled].default,
 input[type=button][disabled].default {
-=======
-    border: 2px solid #5b80b2;
-    background: #7CA0C7 url(../img/default-bg.gif) bottom repeat-x;
-    font-weight: bold;
-    color: #fff;
-    float: right;
-}
-
-.button.default:active, input[type=submit].default:active {
-    background-image: url(../img/default-bg-reverse.gif);
-    background-position: top;
-}
-
-.button[disabled].default, input[type=submit][disabled].default, input[type=button][disabled].default {
-    background-image: url(../img/default-bg.gif);
-    background-position: bottom;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
     opacity: 0.4;
 }
 
@@ -740,13 +492,8 @@ input[type=button][disabled].default {
 /* MODULES */
 
 .module {
-<<<<<<< HEAD
     border: none;
     margin-bottom: 30px;
-=======
-    border: 1px solid #ccc;
-    margin-bottom: 5px;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
     background: #fff;
 }
 
@@ -769,7 +516,6 @@ input[type=button][disabled].default {
 
 .module h2, .module caption, .inline-group h2 {
     margin: 0;
-<<<<<<< HEAD
     padding: 8px;
     font-weight: 400;
     font-size: 13px;
@@ -785,16 +531,6 @@ input[type=button][disabled].default {
     text-transform: uppercase;
 }
 
-=======
-    padding: 2px 5px 3px 5px;
-    font-size: 11px;
-    text-align: left;
-    font-weight: bold;
-    background: #7CA0C7 url(../img/default-bg.gif) top left repeat-x;
-    color: #fff;
-}
-
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 .module table {
     border-collapse: collapse;
 }
@@ -807,7 +543,6 @@ ul.messagelist {
 }
 
 ul.messagelist li {
-<<<<<<< HEAD
     display: block;
     font-weight: 400;
     font-size: 13px;
@@ -852,53 +587,6 @@ ul.errorlist li {
     font-size: 13px;
     display: block;
     margin-bottom: 4px;
-=======
-    font-size: 12px;
-    font-weight: bold;
-    display: block;
-    padding: 5px 5px 4px 25px;
-    margin: 0 0 3px 0;
-    border-bottom: 1px solid #ddd;
-    color: #666;
-    background: #dfd url(../img/icon_success.gif) 5px .3em no-repeat;
-}
-
-ul.messagelist li.warning {
-    background: #ffc url(../img/icon_alert.gif) 5px .3em no-repeat;
-}
-
-ul.messagelist li.error {
-    background: #ffefef url(../img/icon_error.gif) 5px .3em no-repeat;
-}
-
-.errornote {
-    font-size: 12px !important;
-    font-weight: bold;
-    display: block;
-    padding: 5px 5px 4px 25px;
-    margin: 0 0 3px 0;
-    border: 1px solid #c22;
-    color: #c11;
-    background: #ffefef url(../img/icon_error.gif) 5px .38em no-repeat;
-}
-
-.errornote, ul.errorlist {
-    border-radius: 1px;
-}
-
-ul.errorlist {
-    margin: 0 0 4px !important;
-    padding: 0 !important;
-    color: #fff;
-    background: #c11;
-}
-
-ul.errorlist li {
-    font-size: 12px !important;
-    display: block;
-    padding: 5px 5px 4px 7px;
-    margin: 3px 0 0 0;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 ul.errorlist li:first-child {
@@ -906,16 +594,11 @@ ul.errorlist li:first-child {
 }
 
 ul.errorlist li a {
-<<<<<<< HEAD
     color: inherit;
-=======
-    color: #fff;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
     text-decoration: underline;
 }
 
 td ul.errorlist {
-<<<<<<< HEAD
     margin: 0;
     padding: 0;
 }
@@ -937,27 +620,6 @@ td ul.errorlist li {
 
 .errors input, .errors select, .errors textarea {
     border: 1px solid #ba2121;
-=======
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-td ul.errorlist li {
-    margin: 0 !important;
-}
-
-.errors, .form-row.errors {
-    background: #ffefef;
-}
-
-.form-row.errors {
-    border: 1px solid #c22;
-    margin: -1px;
-}
-
-.errors input, .errors select, .errors textarea {
-    border: 1px solid #c11;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 div.system-message {
@@ -971,11 +633,7 @@ div.system-message p.system-message-title {
     padding: 4px 5px 4px 25px;
     margin: 0;
     color: #c11;
-<<<<<<< HEAD
     background: #ffefef url(../img/icon-no.svg) 5px 5px no-repeat;
-=======
-    background: #ffefef url(../img/icon_error.gif) 5px .3em no-repeat;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 .description {
@@ -986,7 +644,6 @@ div.system-message p.system-message-title {
 /* BREADCRUMBS */
 
 div.breadcrumbs {
-<<<<<<< HEAD
     background: #79aec8;
     padding: 10px 40px;
     border: none;
@@ -1018,9 +675,6 @@ div.breadcrumbs a:focus, div.breadcrumbs a:hover {
 .deletelink {
     padding-left: 16px;
     background: url(../img/icon-deletelink.svg) 0 1px no-repeat;
-=======
-    background: #fff url(../img/nav-bg-reverse.gif) 0 -10px repeat-x;
-    padding: 2px 8px 3px 8px;
     font-size: 11px;
     color: #999;
     border-top: 1px solid #fff;
@@ -1043,21 +697,19 @@ div.breadcrumbs a:focus, div.breadcrumbs a:hover {
 .deletelink {
     padding-left: 12px;
     background: url(../img/icon_deletelink.gif) 0 .25em no-repeat;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 a.deletelink:link, a.deletelink:visited {
     color: #CC3434;
 }
 
-<<<<<<< HEAD
 a.deletelink:focus, a.deletelink:hover {
     color: #993333;
     text-decoration: none;
-=======
+}
+
 a.deletelink:hover {
     color: #993333;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 /* OBJECT TOOLS */
@@ -1065,19 +717,10 @@ a.deletelink:hover {
 .object-tools {
     font-size: 10px;
     font-weight: bold;
-<<<<<<< HEAD
     padding-left: 0;
     float: right;
     position: relative;
     margin-top: -48px;
-=======
-    font-family: Arial,Helvetica,sans-serif;
-    padding-left: 0;
-    float: right;
-    position: relative;
-    margin-top: -2.4em;
-    margin-bottom: -2em;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 .form-row .object-tools {
@@ -1102,7 +745,6 @@ a.deletelink:hover {
 .object-tools a:link, .object-tools a:visited {
     display: block;
     float: left;
-<<<<<<< HEAD
     padding: 3px 12px;
     background: #999;
     font-weight: 400;
@@ -1132,7 +774,6 @@ a.deletelink:hover {
 
 .object-tools a.addlink {
     background-image: url(../img/tooltag-add.svg);
-=======
     color: #fff;
     padding: .2em 10px;
     background: #999;
@@ -1150,7 +791,6 @@ a.deletelink:hover {
 .object-tools a.addlink {
     background: #999 url(../img/tooltag-add.png) 95% center no-repeat;
     padding-right: 26px;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 /* OBJECT HISTORY */
@@ -1168,24 +808,17 @@ table#change-history tbody th {
 #container {
     position: relative;
     width: 100%;
-<<<<<<< HEAD
     min-width: 980px;
-=======
-    min-width: 760px;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
     padding: 0;
 }
 
 #content {
-<<<<<<< HEAD
     padding: 20px 40px;
 }
 
 .dashboard #content {
     width: 600px;
-=======
     margin: 10px 15px;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 #content-main {
@@ -1195,15 +828,9 @@ table#change-history tbody th {
 
 #content-related {
     float: right;
-<<<<<<< HEAD
     width: 260px;
     position: relative;
     margin-right: -300px;
-=======
-    width: 18em;
-    position: relative;
-    margin-right: -19em;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 #footer {
@@ -1214,29 +841,17 @@ table#change-history tbody th {
 /* COLUMN TYPES */
 
 .colMS {
-<<<<<<< HEAD
     margin-right: 300px;
 }
 
 .colSM {
     margin-left: 300px;
-=======
-    margin-right: 20em !important;
-}
-
-.colSM {
-    margin-left: 20em !important;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 .colSM #content-related {
     float: left;
     margin-right: 0;
-<<<<<<< HEAD
     margin-left: -300px;
-=======
-    margin-left: -19em;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 .colSM #content-main {
@@ -1244,10 +859,7 @@ table#change-history tbody th {
 }
 
 .popup .colM {
-<<<<<<< HEAD
     width: auto;
-=======
-    width: 95%;
 }
 
 .subcol {
@@ -1258,22 +870,16 @@ table#change-history tbody th {
 
 .dashboard #content {
     width: 500px;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 /* HEADER */
 
 #header {
-<<<<<<< HEAD
     width: auto;
     height: 40px;
     padding: 10px 40px;
     background: #417690;
     line-height: 40px;
-=======
-    width: 100%;
-    background: #417690;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
     color: #ffc;
     overflow: hidden;
 }
@@ -1282,18 +888,13 @@ table#change-history tbody th {
     color: #fff;
 }
 
-<<<<<<< HEAD
 #header a:focus , #header a:hover {
-=======
-#header a:hover {
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
     text-decoration: underline;
 }
 
 #branding {
     float: left;
 }
-<<<<<<< HEAD
 
 #branding h1 {
     padding: 0;
@@ -1305,17 +906,6 @@ table#change-history tbody th {
 
 #branding h1, #branding h1 a:link, #branding h1 a:visited {
     color: #f5dd5d;
-=======
-#branding h1 {
-    padding: 0 10px;
-    font-size: 18px;
-    margin: 8px 0;
-    font-weight: normal;
-}
-
-#branding h1, #branding h1 a:link, #branding h1 a:visited {
-    color: #f4f379;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
 
 #branding h2 {
@@ -1332,7 +922,6 @@ table#change-history tbody th {
 
 #user-tools {
     float: right;
-<<<<<<< HEAD
     padding: 0;
     margin: 0 0 0 20px;
     font-weight: 300;
@@ -1440,8 +1029,6 @@ table#change-history tbody th {
 
 .popup #header {
     padding: 10px 20px;
-=======
-    padding: 1.2em 10px;
     font-size: 11px;
     text-align: right;
 }
@@ -1461,5 +1048,4 @@ table#change-history tbody th {
 #content-related .module h2 {
     background: #eee url(../img/nav-bg.gif) bottom left repeat-x;
     color: #666;
->>>>>>> 5cf4e93396b90faed393a6bcb4180d63eb23a5d9
 }
