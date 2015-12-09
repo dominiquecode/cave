@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for vin in vins %}
+        <div class="post">
+            <div class="date">
+                enregistré le : {{ vin.published_date }}
+            </div>
+            {{ form_liste_vins }}
+            <p>{{ vin.commentaire|linebreaks }}</p>
+        </div>
+    {% endfor %}
+{% endblock content %}
