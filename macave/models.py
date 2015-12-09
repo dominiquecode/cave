@@ -18,3 +18,12 @@ class Vin(models.Model):
 
     def __str__(self):
         return '{0}({1})'.format(self.etiquette, str(self.millesime))
+
+
+class Region(models.Model):
+    nom = models.CharField(max_length=20)
+    commentaire = models.TextField()
+
+    def __str__(self):
+        return self.nom
+
