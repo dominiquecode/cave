@@ -23,9 +23,7 @@ lib64/
 parts/
 sdist/
 var/
-*.egg-info/
 .installed.cfg
-*.egg
 
 
 # PyInstaller
@@ -63,5 +61,4 @@ target/
 
 # DB stuff
 dbtest
-*/migrations/
-
+*/migrations
