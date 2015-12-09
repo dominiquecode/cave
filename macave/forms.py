@@ -1,7 +1,8 @@
-from django.forms import Modelform
+from django import forms
 from .models import Vin
 
-class FormListeVins(Modelform):
+
+class FormListeVins(forms.Modelform):
     class Meta:
         model = Vin
         fields = ['nom', 'region', 'Region.pays', 'millesime']
