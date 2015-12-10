@@ -1,5 +1,5 @@
 from django import forms
-from .models import Vin
+from .models import Vin, Region
 
 
 class ListeVinsForm(forms.ModelForm):
