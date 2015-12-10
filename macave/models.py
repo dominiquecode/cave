@@ -17,7 +17,7 @@ class Region(models.Model):
     nom_pays = models.ForeignKey('Pays', 'nom_pays', blank=True, default='nil')
 
     def __str__(self):
-        return self.region
+        return self.nom_region
 
 
 class Vin(models.Model):
