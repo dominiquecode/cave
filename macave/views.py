@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Vin
-from .forms import FormListeVins
+from .forms import ListeVinsForm
 
 
 # Create your views here.
@@ -9,7 +9,7 @@ def cave(request):
 
 
 def liste_vins(request):
-    form_liste_vins = FormListeVins()
+    form_liste_vins = ListeVinsForm()
     return render(request,'macave/liste_vins.html', {'form_liste_vins':form_liste_vins})
 
 
