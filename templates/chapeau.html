@@ -1,0 +1,19 @@
+{% block chapeau %}
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Bienvenue dans ma cave !</h1>
+        <p> Site en développement avec l'aide de Python et Django, deux amis compétents qui m'aident beaucoup. <br />
+            Évidemment, il me faut quand même donner un peu du mien aussi :-).</p>
+          <p>Ah! j'allais oublier notre ami Bootstrapped, désolé!</p>
+        <p>En fait c'est un pretexte pour développer un site web en Python et apprendre comment ça fonctionne...</p>
+        <p>
+          <a class="btn btn-lg btn-primary" href="{% url 'unverre' %}" role="button">Un verre avec ça ! &raquo;</a>
+        </p>
+      </div>
+
+    </div> <!-- /container -->
+
+{% endblock %}

@@ -44,99 +44,21 @@
   </head>
 
   <body>
-
-    <!-- Static navbar -->
-    <nav class="navbar navbar-inverse navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">Ma Cave</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <!--<li class="active"><a href="/">Home</a></li>-->
-            <li><a href="{% url 'blog' %}">Blog</a></li>
-              <li><a href="{% url 'cave' %}">Cave</a></li>
-
-
-            <!--<li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>-->
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-              <li><a href="{% url 'about' %}">About</a></li>
-            <li><a href="{% url 'contact' %}">Contact</a></li>
-            <li><a href="{% url 'admin:index' %}">Admin</a></li>
-             <li>{% if user.is_authenticated %}
-                 Salut {{ user.username }}  <small>
-              (<a href="{% url 'django.contrib.auth.views.logout' %}">Déconnexion</a>)</small>
-             {% else %}
-                <a href="{% url 'django.contrib.auth.views.login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a
-             {% endif %}
-            </li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-
+    {%  include 'navbar.html' %}
 
     <div class="container">
+        {% include 'chapeau.html' %}
+    </div>
 
-      <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Bienvenu-e dans ma cave !</h1>
-        <p> Site en développement avec l'aide de Python et Django, deux amis compétents qui m'aident beaucoup. <br />
-            Évidemment, il me faut quand même donner un peu du mien aussi :-).</p>
-          <p>Ah! j'allais oublier notre ami Bootstrapped, désolé!</p>
-        <p>En fait c'est un pretexte pour développer un site web en Python et apprendre comment ça fonctionne...</p>
-        <p>
-          <a class="btn btn-lg btn-primary" href="{% url 'unverre' %}" role="button">Un verre avec ça ! &raquo;</a>
-        </p>
-      </div>
+    <div class="container">
+        {% block entete %}
+        {%  endblock %}
+    </div>
 
-    </div> <!-- /container -->
-
-     <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Ma Cave</h2>
-          <p>Dans cet environnement, vous trouverez des informations sur ma cave et les outils de gestion
-          de cette cave. C'est encore en développement pour un bon moment, mais on progresse, c'est encourageant.</p>
-          <p><a class="btn btn-default" href="{% url 'cave' %}" role="button">Voir details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Blog</h2>
-          <p>Dans cet environnent, vous trouverez un blog pour échanger sur l'oeunologie en général et le bon
-          vin en particulier. N'hésitez pas à apporter votre grain de .... raisin!</p>
-          <p><a class="btn btn-default" href="{% url 'blog' %}" role="button">Voir details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Informations</h2>
-          <p>Dans cet environnement, vous trouverez des informations générales sur les vins et ses dérivés.
-          Là encore votre grain de ...raisin est requis, enfin si vous le voulez bien, évidemment!</p>
-          <p><a class="btn btn-default" href="{% url 'home' %}" role="button">Voir details &raquo;</a></p>
-        </div>
-      </div>
-<div class="container">
-
-    {% block content %}
-    {% endblock %}
-</div>
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
 
 
     <!-- Bootstrap core JavaScript
