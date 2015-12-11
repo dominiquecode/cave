@@ -1,0 +1,84 @@
+[
+{
+    "pk": 1,
+    "model": "macave.pays",
+    "fields": {
+        "commentaire": "le pays du vin",
+        "nom_pays": "France"
+    }
+},
+{
+    "pk": 2,
+    "model": "macave.pays",
+    "fields": {
+        "commentaire": "le pays du vin ",
+        "nom_pays": "Argentine"
+    }
+},
+{
+    "pk": 1,
+    "model": "macave.region",
+    "fields": {
+        "nom_pays": "France",
+        "commentaire": "la r\u00e9gion du vin",
+        "nom_region": "Bordeaux"
+    }
+},
+{
+    "pk": 2,
+    "model": "macave.region",
+    "fields": {
+        "nom_pays": "France",
+        "commentaire": "la r\u00e9gion du vin",
+        "nom_region": "Bourgogne"
+    }
+},
+{
+    "pk": 3,
+    "model": "macave.region",
+    "fields": {
+        "nom_pays": "Argentine",
+        "commentaire": "la r\u00e9gion du vin",
+        "nom_region": "Torontes"
+    }
+},
+{
+    "pk": 1,
+    "model": "macave.vin",
+    "fields": {
+        "published_date": "2015-12-11T13:55:27.794Z",
+        "nom_vin": "Etchart",
+        "created_date": "2015-12-11T13:55:27.794Z",
+        "commentaire": "le vin blanc",
+        "nom_region": "Torontes",
+        "millesime": 2014,
+        "etiquette": "Vin blanc"
+    }
+},
+{
+    "pk": 2,
+    "model": "macave.vin",
+    "fields": {
+        "published_date": "2015-12-11T13:55:43.301Z",
+        "nom_vin": "Saint-\u00c9milion",
+        "created_date": "2015-12-11T13:55:43.301Z",
+        "commentaire": "le vin",
+        "nom_region": "Bordeaux",
+        "millesime": 2002,
+        "etiquette": "Ch\u00e2teau Dugros"
+    }
+},
+{
+    "pk": 3,
+    "model": "macave.vin",
+    "fields": {
+        "published_date": "2015-12-11T13:55:57.065Z",
+        "nom_vin": "Saint-\u00c9milion grand cr\u00fb",
+        "created_date": "2015-12-11T13:55:57.065Z",
+        "commentaire": "le vin ",
+        "nom_region": "Bordeaux",
+        "millesime": 2003,
+        "etiquette": "Cl\u00f4t du Vigoux"
+    }
+}
+]
