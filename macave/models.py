@@ -10,9 +10,6 @@ class Pays(models.Model):
     def __str__(self):
         return self.nom_pays
 
-    class Meta:
-        db_table = 'pays'
-
 
 class Region(models.Model):
     nom_region = models.CharField(max_length=20, unique=True)
