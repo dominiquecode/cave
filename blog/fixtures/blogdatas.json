@@ -1,0 +1,623 @@
+[
+{
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    },
+    "pk": 1,
+    "model": "contenttypes.contenttype"
+},
+{
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    },
+    "pk": 2,
+    "model": "contenttypes.contenttype"
+},
+{
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    },
+    "pk": 3,
+    "model": "contenttypes.contenttype"
+},
+{
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    },
+    "pk": 4,
+    "model": "contenttypes.contenttype"
+},
+{
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    },
+    "pk": 5,
+    "model": "contenttypes.contenttype"
+},
+{
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    },
+    "pk": 6,
+    "model": "contenttypes.contenttype"
+},
+{
+    "fields": {
+        "app_label": "blog",
+        "model": "post"
+    },
+    "pk": 7,
+    "model": "contenttypes.contenttype"
+},
+{
+    "fields": {
+        "app_label": "blog",
+        "model": "comment"
+    },
+    "pk": 8,
+    "model": "contenttypes.contenttype"
+},
+{
+    "fields": {
+        "app_label": "macave",
+        "model": "pays"
+    },
+    "pk": 9,
+    "model": "contenttypes.contenttype"
+},
+{
+    "fields": {
+        "app_label": "macave",
+        "model": "region"
+    },
+    "pk": 10,
+    "model": "contenttypes.contenttype"
+},
+{
+    "fields": {
+        "app_label": "macave",
+        "model": "vin"
+    },
+    "pk": 11,
+    "model": "contenttypes.contenttype"
+},
+{
+    "fields": {
+        "expire_date": "2015-12-25T11:56:39.775Z",
+        "session_data": "NDk0NmZlMzM1ZjBlMzdiNzYyY2IwMGEwNGVjOGFmMzgyY2RhOTk1ZTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiMTcxYjgwYjc0NzllNGZlZWIyNGI4OGRiNWU2YTVlMDNlMjgyZThlOCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0="
+    },
+    "pk": "6hdywwq7vkqeg8tfi5nqvs1nic016fi1",
+    "model": "sessions.session"
+},
+{
+    "fields": {
+        "nom_pays": "France",
+        "commentaire": "le pays"
+    },
+    "pk": 1,
+    "model": "macave.pays"
+},
+{
+    "fields": {
+        "nom_pays": "Argentine",
+        "commentaire": "l'autre pays"
+    },
+    "pk": 2,
+    "model": "macave.pays"
+},
+{
+    "fields": {
+        "nom_pays": "France",
+        "nom_region": "Bordeaux",
+        "commentaire": "la r\u00e9gion"
+    },
+    "pk": 1,
+    "model": "macave.region"
+},
+{
+    "fields": {
+        "nom_pays": "France",
+        "nom_region": "Bourgogne",
+        "commentaire": "l'autre r\u00e9gion"
+    },
+    "pk": 2,
+    "model": "macave.region"
+},
+{
+    "fields": {
+        "created_date": "2015-12-11T02:20:19.297Z",
+        "nom_region": "Bordeaux",
+        "millesime": 2002,
+        "nom_vin": "Saint-\u00c9milion",
+        "published_date": "2015-12-11T02:20:19.297Z",
+        "etiquette": "Grand cr\u00fb du ch\u00e2teau",
+        "commentaire": "test"
+    },
+    "pk": 1,
+    "model": "macave.vin"
+},
+{
+    "fields": {
+        "created_date": "2015-12-11T02:20:36.035Z",
+        "nom_region": "Bordeaux",
+        "millesime": 2003,
+        "nom_vin": "Saint-\u00c9milion grand cr\u00fb",
+        "published_date": "2015-12-11T02:20:36.035Z",
+        "etiquette": "Le chateau des pr\u00e8s",
+        "commentaire": "test"
+    },
+    "pk": 2,
+    "model": "macave.vin"
+},
+{
+    "fields": {
+        "codename": "add_logentry",
+        "content_type": 1,
+        "name": "Can add log entry"
+    },
+    "pk": 1,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "change_logentry",
+        "content_type": 1,
+        "name": "Can change log entry"
+    },
+    "pk": 2,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "delete_logentry",
+        "content_type": 1,
+        "name": "Can delete log entry"
+    },
+    "pk": 3,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "add_permission",
+        "content_type": 2,
+        "name": "Can add permission"
+    },
+    "pk": 4,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "change_permission",
+        "content_type": 2,
+        "name": "Can change permission"
+    },
+    "pk": 5,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "delete_permission",
+        "content_type": 2,
+        "name": "Can delete permission"
+    },
+    "pk": 6,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "add_group",
+        "content_type": 3,
+        "name": "Can add group"
+    },
+    "pk": 7,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "change_group",
+        "content_type": 3,
+        "name": "Can change group"
+    },
+    "pk": 8,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "delete_group",
+        "content_type": 3,
+        "name": "Can delete group"
+    },
+    "pk": 9,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "add_user",
+        "content_type": 4,
+        "name": "Can add user"
+    },
+    "pk": 10,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "change_user",
+        "content_type": 4,
+        "name": "Can change user"
+    },
+    "pk": 11,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "delete_user",
+        "content_type": 4,
+        "name": "Can delete user"
+    },
+    "pk": 12,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "add_contenttype",
+        "content_type": 5,
+        "name": "Can add content type"
+    },
+    "pk": 13,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "change_contenttype",
+        "content_type": 5,
+        "name": "Can change content type"
+    },
+    "pk": 14,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "delete_contenttype",
+        "content_type": 5,
+        "name": "Can delete content type"
+    },
+    "pk": 15,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "add_session",
+        "content_type": 6,
+        "name": "Can add session"
+    },
+    "pk": 16,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "change_session",
+        "content_type": 6,
+        "name": "Can change session"
+    },
+    "pk": 17,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "delete_session",
+        "content_type": 6,
+        "name": "Can delete session"
+    },
+    "pk": 18,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "add_post",
+        "content_type": 7,
+        "name": "Can add post"
+    },
+    "pk": 19,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "change_post",
+        "content_type": 7,
+        "name": "Can change post"
+    },
+    "pk": 20,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "delete_post",
+        "content_type": 7,
+        "name": "Can delete post"
+    },
+    "pk": 21,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "add_comment",
+        "content_type": 8,
+        "name": "Can add comment"
+    },
+    "pk": 22,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "change_comment",
+        "content_type": 8,
+        "name": "Can change comment"
+    },
+    "pk": 23,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "delete_comment",
+        "content_type": 8,
+        "name": "Can delete comment"
+    },
+    "pk": 24,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "add_pays",
+        "content_type": 9,
+        "name": "Can add pays"
+    },
+    "pk": 25,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "change_pays",
+        "content_type": 9,
+        "name": "Can change pays"
+    },
+    "pk": 26,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "delete_pays",
+        "content_type": 9,
+        "name": "Can delete pays"
+    },
+    "pk": 27,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "add_region",
+        "content_type": 10,
+        "name": "Can add region"
+    },
+    "pk": 28,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "change_region",
+        "content_type": 10,
+        "name": "Can change region"
+    },
+    "pk": 29,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "delete_region",
+        "content_type": 10,
+        "name": "Can delete region"
+    },
+    "pk": 30,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "add_vin",
+        "content_type": 11,
+        "name": "Can add vin"
+    },
+    "pk": 31,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "change_vin",
+        "content_type": 11,
+        "name": "Can change vin"
+    },
+    "pk": 32,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "codename": "delete_vin",
+        "content_type": 11,
+        "name": "Can delete vin"
+    },
+    "pk": 33,
+    "model": "auth.permission"
+},
+{
+    "fields": {
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@tradom.ca",
+        "date_joined": "2015-12-11T02:17:40.361Z",
+        "last_login": "2015-12-11T11:56:39.773Z",
+        "is_active": true,
+        "is_superuser": true,
+        "password": "pbkdf2_sha256$20000$5SUcPYaEvICj$YmpCCwEjeFh0MejIcqpuQaZLaz4+gg/NSHB33F9NABs=",
+        "username": "Dominique",
+        "user_permissions": [],
+        "is_staff": true,
+        "groups": []
+    },
+    "pk": 1,
+    "model": "auth.user"
+},
+{
+    "fields": {
+        "text": "Quare hoc quidem praeceptum, cuiuscumque est, ad tollendam amicitiam valet; illud potius praecipiendum fuit, ut eam diligentiam adhiberemus in amicitiis comparandis, ut ne quando amare inciperemus eum, quem aliquando odisse possemus. Quin etiam si minus felices in diligendo fuissemus, ferendum id Scipio potius quam inimicitiarum tempus cogitandum putabat.\r\n\r\nEt licet quocumque oculos flexeris feminas adfatim multas spectare cirratas, quibus, si nupsissent, per aetatem ter iam nixus poterat suppetere liberorum, ad usque taedium pedibus pavimenta tergentes iactari volucriter gyris, dum exprimunt innumera simulacra, quae finxere fabulae theatrales.\r\n\r\nBatnae municipium in Anthemusia conditum Macedonum manu priscorum ab Euphrate flumine brevi spatio disparatur, refertum mercatoribus opulentis, ubi annua sollemnitate prope Septembris initium mensis ad nundinas magna promiscuae fortunae convenit multitudo ad commercanda quae Indi mittunt et Seres aliaque plurima vehi terra marique consueta.",
+        "author": 1,
+        "title": "petit post",
+        "published_date": "2015-12-11T21:14:38.730Z",
+        "created_date": "2015-12-11T02:18:05Z"
+    },
+    "pk": 1,
+    "model": "blog.post"
+},
+{
+    "fields": {
+        "text": "Quare hoc quidem praeceptum, cuiuscumque est, ad tollendam amicitiam valet; illud potius praecipiendum fuit, ut eam diligentiam adhiberemus in amicitiis comparandis, ut ne quando amare inciperemus eum, quem aliquando odisse possemus. Quin etiam si minus felices in diligendo fuissemus, ferendum id Scipio potius quam inimicitiarum tempus cogitandum putabat.\r\n\r\nEt licet quocumque oculos flexeris feminas adfatim multas spectare cirratas, quibus, si nupsissent, per aetatem ter iam nixus poterat suppetere liberorum, ad usque taedium pedibus pavimenta tergentes iactari volucriter gyris, dum exprimunt innumera simulacra, quae finxere fabulae theatrales.\r\n\r\nBatnae municipium in Anthemusia conditum Macedonum manu priscorum ab Euphrate flumine brevi spatio disparatur, refertum mercatoribus opulentis, ubi annua sollemnitate prope Septembris initium mensis ad nundinas magna promiscuae fortunae convenit multitudo ad commercanda quae Indi mittunt et Seres aliaque plurima vehi terra marique consueta.",
+        "author": 1,
+        "title": "le suivant",
+        "published_date": "2015-12-11T21:14:53.955Z",
+        "created_date": "2015-12-11T02:18:20Z"
+    },
+    "pk": 2,
+    "model": "blog.post"
+},
+{
+    "fields": {
+        "text": "Quare hoc quidem praeceptum, cuiuscumque est, ad tollendam amicitiam valet; illud potius praecipiendum fuit, ut eam diligentiam adhiberemus in amicitiis comparandis, ut ne quando amare inciperemus eum, quem aliquando odisse possemus. Quin etiam si minus felices in diligendo fuissemus, ferendum id Scipio potius quam inimicitiarum tempus cogitandum putabat.\r\n\r\nEt licet quocumque oculos flexeris feminas adfatim multas spectare cirratas, quibus, si nupsissent, per aetatem ter iam nixus poterat suppetere liberorum, ad usque taedium pedibus pavimenta tergentes iactari volucriter gyris, dum exprimunt innumera simulacra, quae finxere fabulae theatrales.\r\n\r\nBatnae municipium in Anthemusia conditum Macedonum manu priscorum ab Euphrate flumine brevi spatio disparatur, refertum mercatoribus opulentis, ubi annua sollemnitate prope Septembris initium mensis ad nundinas magna promiscuae fortunae convenit multitudo ad commercanda quae Indi mittunt et Seres aliaque plurima vehi terra marique consueta.",
+        "author": 1,
+        "title": "Des nouvelles de vacances",
+        "published_date": null,
+        "created_date": "2015-12-11T21:15:14Z"
+    },
+    "pk": 3,
+    "model": "blog.post"
+},
+{
+    "fields": {
+        "action_flag": 1,
+        "user": 1,
+        "action_time": "2015-12-11T02:18:20.731Z",
+        "change_message": "",
+        "object_repr": "petit post",
+        "content_type": 7,
+        "object_id": "1"
+    },
+    "pk": 1,
+    "model": "admin.logentry"
+},
+{
+    "fields": {
+        "action_flag": 1,
+        "user": 1,
+        "action_time": "2015-12-11T02:18:36.316Z",
+        "change_message": "",
+        "object_repr": "le suivant",
+        "content_type": 7,
+        "object_id": "2"
+    },
+    "pk": 2,
+    "model": "admin.logentry"
+},
+{
+    "fields": {
+        "action_flag": 1,
+        "user": 1,
+        "action_time": "2015-12-11T02:18:51.582Z",
+        "change_message": "",
+        "object_repr": "France",
+        "content_type": 9,
+        "object_id": "1"
+    },
+    "pk": 3,
+    "model": "admin.logentry"
+},
+{
+    "fields": {
+        "action_flag": 1,
+        "user": 1,
+        "action_time": "2015-12-11T02:19:01.550Z",
+        "change_message": "",
+        "object_repr": "Argentine",
+        "content_type": 9,
+        "object_id": "2"
+    },
+    "pk": 4,
+    "model": "admin.logentry"
+},
+{
+    "fields": {
+        "action_flag": 1,
+        "user": 1,
+        "action_time": "2015-12-11T02:19:22.014Z",
+        "change_message": "",
+        "object_repr": "Bordeaux",
+        "content_type": 10,
+        "object_id": "1"
+    },
+    "pk": 5,
+    "model": "admin.logentry"
+},
+{
+    "fields": {
+        "action_flag": 1,
+        "user": 1,
+        "action_time": "2015-12-11T02:19:51.689Z",
+        "change_message": "",
+        "object_repr": "Bourgogne",
+        "content_type": 10,
+        "object_id": "2"
+    },
+    "pk": 6,
+    "model": "admin.logentry"
+},
+{
+    "fields": {
+        "action_flag": 1,
+        "user": 1,
+        "action_time": "2015-12-11T02:20:19.298Z",
+        "change_message": "",
+        "object_repr": "Grand cr\u00fb du ch\u00e2teau(2002)",
+        "content_type": 11,
+        "object_id": "1"
+    },
+    "pk": 7,
+    "model": "admin.logentry"
+},
+{
+    "fields": {
+        "action_flag": 1,
+        "user": 1,
+        "action_time": "2015-12-11T02:20:36.035Z",
+        "change_message": "",
+        "object_repr": "Le chateau des pr\u00e8s(2003)",
+        "content_type": 11,
+        "object_id": "2"
+    },
+    "pk": 8,
+    "model": "admin.logentry"
+},
+{
+    "fields": {
+        "action_flag": 1,
+        "user": 1,
+        "action_time": "2015-12-11T21:15:33.149Z",
+        "change_message": "",
+        "object_repr": "Des nouvelles de vacances",
+        "content_type": 7,
+        "object_id": "3"
+    },
+    "pk": 9,
+    "model": "admin.logentry"
+}
+]

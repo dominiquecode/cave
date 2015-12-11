@@ -1,0 +1,62 @@
+[
+{
+    "fields": {
+        "commentaire": "le pays",
+        "nom_pays": "France"
+    },
+    "model": "macave.pays",
+    "pk": 1
+},
+{
+    "fields": {
+        "commentaire": "l'autre pays",
+        "nom_pays": "Argentine"
+    },
+    "model": "macave.pays",
+    "pk": 2
+},
+{
+    "fields": {
+        "commentaire": "la r\u00e9gion",
+        "nom_region": "Bordeaux",
+        "nom_pays": "France"
+    },
+    "model": "macave.region",
+    "pk": 1
+},
+{
+    "fields": {
+        "commentaire": "l'autre r\u00e9gion",
+        "nom_region": "Bourgogne",
+        "nom_pays": "France"
+    },
+    "model": "macave.region",
+    "pk": 2
+},
+{
+    "fields": {
+        "millesime": 2002,
+        "etiquette": "Grand cr\u00fb du ch\u00e2teau",
+        "created_date": "2015-12-11T02:20:19.297Z",
+        "published_date": "2015-12-11T02:20:19.297Z",
+        "commentaire": "test",
+        "nom_vin": "Saint-\u00c9milion",
+        "nom_region": "Bordeaux"
+    },
+    "model": "macave.vin",
+    "pk": 1
+},
+{
+    "fields": {
+        "millesime": 2003,
+        "etiquette": "Le chateau des pr\u00e8s",
+        "created_date": "2015-12-11T02:20:36.035Z",
+        "published_date": "2015-12-11T02:20:36.035Z",
+        "commentaire": "test",
+        "nom_vin": "Saint-\u00c9milion grand cr\u00fb",
+        "nom_region": "Bordeaux"
+    },
+    "model": "macave.vin",
+    "pk": 2
+}
+]
