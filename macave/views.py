@@ -25,3 +25,6 @@ def accueil(request):
 def unverre(request):
     return  render(request, 'macave/unverre.html', {})
 
+
+def informations(request):
+    return render(request, 'macave/informations.html', {})
