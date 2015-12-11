@@ -102,13 +102,36 @@
         <p> Site en développement avec l'aide de Python et Django, deux amis compétents qui m'aident beaucoup. <br />
             Évidemment, il me faut quand même donner un peu du mien aussi :-).</p>
           <p>Ah! j'allais oublier notre ami Bootstrapped, désolé!</p>
-        <p>Des nouvelles oeunologiques s'en viennent bientôt...</p>
+        <p>En fait c'est un pretexte pour développer un site web en Python et apprendre comment ça fonctionne...</p>
         <p>
           <a class="btn btn-lg btn-primary" href="{% url 'unverre' %}" role="button">Un verre avec ça ! &raquo;</a>
         </p>
       </div>
 
     </div> <!-- /container -->
+
+     <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Ma Cave</h2>
+          <p>Dans cet environnement, vous trouverez des informations sur ma cave et les outils de gestion
+          de cette cave. C'est encore en développement pour un bon moment, mais on progresse, c'est encourageant.</p>
+          <p><a class="btn btn-default" href="{% url 'cave' %}" role="button">Voir details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Blog</h2>
+          <p>Dans cet environnent, vous trouverez un blog pour échanger sur l'oeunologie en général et le bon
+          vin en particulier. N'hésitez pas à apporter votre grain de .... raisin!</p>
+          <p><a class="btn btn-default" href="{% url 'blog' %}" role="button">Voir details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Informations</h2>
+          <p>Dans cet environnement, vous trouverez des informations générales sur les vins et ses dérivés.
+          Là encore votre grain de ...raisin est requis, enfin si vous le voulez bien, évidemment!</p>
+          <p><a class="btn btn-default" href="{% url 'home' %}" role="button">Voir details &raquo;</a></p>
+        </div>
+      </div>
 <div class="container">
 
     {% block content %}

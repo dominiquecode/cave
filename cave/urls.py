@@ -16,15 +16,16 @@ Including another URLconf
 """
 from django.conf.urls import url, include, patterns
 from django.contrib import admin
+
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^$', 'cave.views.home', name='home'),
-    url(r'^about$', 'cave.views.about', name='about'),
-    url(r'^contact$', 'cave.views.contact', name='contact'),
-    url(r'^admin/', admin.site.urls),
-    url(r'^accounts/login/$', 'django.contrib.auth.views.login'),
-    url(r'^accounts/logout/$', 'django.contrib.auth.views.logout', {'next_page': '/'}),
-    url(r'^blog/', include('blog.urls')),
-    url(r'^cave/', include('macave.urls')),
+                       url(r'^$', 'cave.views.home', name='home'),
+                       url(r'^about$', 'cave.views.about', name='about'),
+                       url(r'^contact$', 'cave.views.contact', name='contact'),
+                       url(r'^admin/', admin.site.urls),
+                       url(r'^accounts/login/$', 'django.contrib.auth.views.login'),
+                       url(r'^accounts/logout/$', 'django.contrib.auth.views.logout', {'next_page': '/'}),
+                       url(r'^blog/', include('blog.urls')),
+                       url(r'^cave/', include('macave.urls')),
                        )
