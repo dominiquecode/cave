@@ -3,13 +3,19 @@
 {% block content %}
     <div class="container">
     {% for vin in vins %}
-        <div class="post">
-            <div class="date">
-                enregistré le : {{ vin.published_date }}
-            </div>
-            <div>
-                {{ form_liste_vins }}
-                <p>{{ vin.commentaire|linebreaks }}</p>
+        <div class="row1">
+            <div class="post">
+                <div class="date">
+                    {% if vin.published_date %}
+                        enregistré le : {{ vin.published_date }}
+                    {% else %}
+                        enregistré le : en attente
+                    {% endif %}
+                </div>
+                <div>
+                    bouteille : <strong>{{ vin.nom_vin }} {{ vin.millesime }} {{ vin.etiquette }}</strong> <br />
+                    Commentaire : {{ vin.commentaire|linebreaks }}
+                </div>
             </div>
         </div>
     {% endfor %}

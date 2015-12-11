@@ -9,8 +9,8 @@ def cave(request):
 
 
 def liste_vins(request):
-    form_liste_vins = ListeVinsForm()
-    return render(request,'macave/liste_vins.html', {'form_liste_vins':form_liste_vins})
+    vins = Vin.objects.all()
+    return render(request,'macave/liste_vins.html', {'vins':vins})
 
 
 def vin_detail(request, pk):

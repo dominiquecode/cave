@@ -27,6 +27,7 @@ class Vin(models.Model):
     millesime = models.IntegerField()
     commentaire = models.TextField()
     created_date = models.DateTimeField(auto_now_add=True, auto_now=False)
+    published_date = models.DateTimeField(auto_now_add=False, auto_now=True, blank=True, null=True)
 
     def publish(self):
         self.published_date = timezone.now()
