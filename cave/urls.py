@@ -14,6 +14,8 @@ Including another URLconf
     2. Import the include() function: from django.conf.urls import url, include
     3. Add a URL to urlpatterns:  url(r'^blog/', include(blog_urls))
 """
+from django.conf import settings
+from django.conf.urls.static import static
 from django.conf.urls import url, include, patterns
 from django.contrib import admin
 
@@ -29,3 +31,7 @@ urlpatterns = patterns('',
                        url(r'^blog/', include('blog.urls')),
                        url(r'^cave/', include('macave.urls')),
                        )
+
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    urlpatterns += static(settings.MEDIA_ULR, document_root=settings.MEDIA_ROOT)
