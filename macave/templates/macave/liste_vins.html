@@ -2,22 +2,66 @@
 
 {% block content %}
     <div class="container">
-    {% for vin in vins %}
-        <div class="row1">
-            <div class="post">
-                <div class="date">
-                    {% if vin.published_date %}
-                        enregistré le : {{ vin.published_date }}
-                    {% else %}
-                        enregistré le : en attente
-                    {% endif %}
-                </div>
-                <div>
-                    bouteille : <strong>{{ vin.nom_vin }} {{ vin.millesime }} {{ vin.etiquette }}</strong> <br />
-                    Commentaire : {{ vin.commentaire|linebreaks }}
+        {% for vin in vins %}
+            <div class="row1">
+                <div class="post">
+                    {# la colonne de date #}
+                    <div class="col-lg-4">
+                        <div class="date">
+                            {% if vin.published_date %}
+                                enregistré le : {{ vin.published_date }}
+                            {% else %}
+                                enregistré le : en attente
+                            {% endif %}
+                        </div>
+                    </div>
+                    {# la colonne de bouteille #}
+                    <div class="col-lg-6">
+                        bouteille : <strong>{{ vin.nom_vin }} {{ vin.millesime }} {{ vin.etiquette }}</strong> <br />
+                        Commentaire : {{ vin.commentaire|linebreaks }}
+                    </div>
+                    {# la colonne du bouton pour voir plus d'infomration #}
+                    <div class="col-lg-2">
+                        <a href="" class="btn btn-primary btn-xs">Voir ...</a>
+                        <span class="btn btn-primary btn-xs">test</span>
+                    </div>
                 </div>
             </div>
+        {% endfor %}
+    </div>{# fin de la classe container #}
+    <hr>
+        {# le début de la form #}
+    <div class="container">
+        <div class="row1">
+             <form action="" role="form">
+                <div class="form-group">
+                    <label for="form-elem-1">Nom</label>
+                    <input type="text" id="form-elem-1" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="form-elem-2">Téléphone</label>
+                    <input type="text" id="form-elem-2" class="form-control">
+                </div>
+               <div class="help-block">Informations complémentaires</div>
+            </form>
         </div>
-    {% endfor %}
+
+        <hr>
+        <div class="container">
+            <div class="row">
+                <form action="" role="form" class="form-inline">
+                    <label for="form-elem-5">Coordonnées de connexion : </label>
+                    <div class="form-group">
+                        <label for="form-elem-3" class="sr-only">Courriel</label>
+                        <input type="text" id="form-elem-3" class="form-control" placeholder="Entrez le courriel">
+                        <label for="form-elem-4" class="sr-only">Courriel</label>
+                        <input type="password" id="form-elem-4" class="form-control" placeholder="Entrez le mot de passe">
+                        <button type="submit" class="btn btn-default">Connexion</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
+
+
 {% endblock content %}
